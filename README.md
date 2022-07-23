@@ -133,8 +133,9 @@ then after colsing it we wil have a detail graph with TempAvgF', 'DewPointAvgF',
 ![App Screenshot](https://user-images.githubusercontent.com/72987607/180610073-78e99d73-e29d-42d0-9b9f-af830a15c3e0.png))
 
 
-## Acknowledgements
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+# Refrences
+
+ - [Geek for Geeks](https://www.geeksforgeeks.org/python-pandas-dataframe-drop_duplicates/)
+ - [sklearn.linear_model.](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+ 
