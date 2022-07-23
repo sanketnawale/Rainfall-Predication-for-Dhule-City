@@ -24,15 +24,15 @@ make a python code file in my case i have name it as Predict.python
 and write the following code of lines to clean the raw data
 
 ## Structuring the data
-#import Libraries
+##Import Libraries
 
 import pandas as pd  //can pipinstall pandas in pip folder
 import numpy as np  //can pipinstall numpy in pip folder
 
-## read data in pandas 
+## Read data in pandas 
 data = pd.read_csv("Dhule_Raw_weather_data.csv")
 
-## deleting the unnecessary columns in the data
+## Deleting the unnecessary columns in the data
 data = data.drop(
     ['Events', 'Date', 'SeaLevelPressureHighInches', 'SeaLevelPressureLowInches'], axis=1)
 
@@ -49,7 +49,7 @@ after running this code You will find an new file with filtered_data
 
 # Step 2 
 So now we need to import some library
-## import the libraries
+## Import the libraries
 import pandas as pd
 import numpy as np
 import sklearn as sk
@@ -99,7 +99,7 @@ with one day which we have chosen
 
 # Step 3
 
-Now we will make the graph with more vraibles 
+Now we will make the graph with more variables
 
 x_f = X.filter(['TempAvgF', 'DewPointAvgF', 'HumidityAvgPercent',
                 'SeaLevelPressureAvgInches', 'VisibilityAvgMiles',
