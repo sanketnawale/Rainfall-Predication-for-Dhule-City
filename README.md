@@ -1,5 +1,5 @@
 
-# Rainfall-Predication-for-Dhule-City
+## Rainfall-Predication-for-Dhule-City
 
 Rainfall-Predication-for-Dhule-City using CSV data
 
@@ -11,9 +11,7 @@ we can predict the inches of rainfall we can expect.
 
 
 
-
-
-## Step 1
+# Step 1
 
 Get raw weather data in csv format in my case I have a file named as Dhule_Raw_weather_data
 
@@ -25,23 +23,23 @@ make a python code file in my case i have name it as Predict.python
 
 and write the following code of lines to clean the raw data
 
-# Structuring the data
+## Structuring the data
 #import Libraries
 
 import pandas as pd  //can pipinstall pandas in pip folder
 import numpy as np  //can pipinstall numpy in pip folder
 
-# read data in pandas 
+## read data in pandas 
 data = pd.read_csv("Dhule_Raw_weather_data.csv")
 
-# deleting the unnecessary columns in the data
+## deleting the unnecessary columns in the data
 data = data.drop(
     ['Events', 'Date', 'SeaLevelPressureHighInches', 'SeaLevelPressureLowInches'], axis=1)
 
 data = data.replace('T', 0.0)  // replace occurance of T with 0
 data = data.replace('-', 0.0)  //replace occurance of - with 0
 
-# This Saves the data in a csv file with the name we give 
+## This Saves the data in a csv file with the name we give 
 data.to_csv('filtered_data.csv') //clean filtered file with structure data
 
 after running this code You will find an new file with filtered_data
@@ -49,16 +47,16 @@ after running this code You will find an new file with filtered_data
 
 
 
-## Step 2 
+# Step 2 
 So now we need to import some library
-# import the libraries
+## import the libraries
 import pandas as pd
 import numpy as np
 import sklearn as sk
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt //pip install all this
 
-# Reading the structured data
+## Reading the structured data
 data = pd.read_csv("filtered_data.csv")
 
 X = data.drop(['PrecipitationSumInches'], axis=1)
@@ -77,7 +75,7 @@ inp = np.array([[94], [44], [45], [67], [40], [43], [33], [45],
 
 inp = inp.reshape(1, -1)
 
-# Printing output
+## Printing output
 print('The precipitation in inches for the input is:', clf.predict(inp))
 
 print('The precipitation trend graph: ')
@@ -87,19 +85,19 @@ plt.title('Precipitation level')
 plt.xlabel('Days')
 plt.ylabel('Precipitation in inches')
 
-# Plot a graph of precipitation levels vs no of days
+## Plot a graph of precipitation levels vs no of days
 plt.show()
 
 After this you can see the graph below with precipitation levels
 
 with one day which we have chosen
 
-## Screenshots
+# Screenshots
 
 ![App Screenshot](https://user-images.githubusercontent.com/72987607/180610021-eda0ce54-1fb7-45c7-829f-c1f28fd372f9.png)
 
 
-## Step 3
+# Step 3
 
 Now we will make the graph with more vraibles 
 
@@ -114,7 +112,7 @@ for i in range(x_f.columns.size):
                 [day_index], color='r')
     plt.title(x_f.columns.values[i])
 
-# plot a graph with a few features vs precipitation to observe the trends
+## plot a graph with a few features vs precipitation to observe the trends
 plt.show()
 
 now we can observe different levels 
@@ -128,10 +126,10 @@ then after colsing it we wil have a detail graph with TempAvgF', 'DewPointAvgF',
 
 
 
-## Screenshots
+# Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1Z0yC_VUbRrrPBfHHl6wvqxHHp_ZlVtSx/view?usp=sharing)
+![App Screenshot](https://user-images.githubusercontent.com/72987607/180610021-eda0ce54-1fb7-45c7-829f-c1f28fd372f9.png))
 
-![App Screenshot](https://drive.google.com/file/d/1floIzpob5dx_UyAE9T4mNY0K_YupFj9M/view?usp=sharing)
+![App Screenshot](https://user-images.githubusercontent.com/72987607/180610073-78e99d73-e29d-42d0-9b9f-af830a15c3e0.png))
 
 
