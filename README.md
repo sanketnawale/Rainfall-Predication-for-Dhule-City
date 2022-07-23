@@ -96,7 +96,7 @@ with one day which we have chosen
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1Z0yC_VUbRrrPBfHHl6wvqxHHp_ZlVtSx/view?usp=sharing)
+![App Screenshot](https://user-images.githubusercontent.com/72987607/180610021-eda0ce54-1fb7-45c7-829f-c1f28fd372f9.png)
 
 
 ## Step 3
