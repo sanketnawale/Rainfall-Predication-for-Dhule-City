@@ -128,9 +128,9 @@ then after colsing it we wil have a detail graph with TempAvgF', 'DewPointAvgF',
 
 # Screenshots
 
-![App Screenshot](https://user-images.githubusercontent.com/72987607/180610021-eda0ce54-1fb7-45c7-829f-c1f28fd372f9.png))
+![App Screenshot](https://user-images.githubusercontent.com/72987607/180610021-eda0ce54-1fb7-45c7-829f-c1f28fd372f9.png)
 
-![App Screenshot](https://user-images.githubusercontent.com/72987607/180610073-78e99d73-e29d-42d0-9b9f-af830a15c3e0.png))
+![App Screenshot](https://user-images.githubusercontent.com/72987607/180610073-78e99d73-e29d-42d0-9b9f-af830a15c3e0.png)
 
 
 
